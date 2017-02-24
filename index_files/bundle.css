@@ -1,0 +1,214 @@
+@charset "UTF-8";
+/* ============== Browser Support ============== */
+/* ================== Colors ================== */
+/* ================ Typography ================= */
+/* ============ Heights and Widths ============= */
+/* ========== Responsive breakpoints =========== */
+/* ================= Elevations ================ */
+/* ================= Animations ================ */
+/* =================== Icons =================== */
+/* ============== Module specific ============== */
+/* ============== Accordion ============== */
+/* ============== Avatar ============== */
+/* ============== Badge ============== */
+/* ============== Button ============== */
+/* ============== Card ============== */
+/* ============== Event Cards ============== */
+/* ============== Form ============== */
+/* ============== Overlay ============== */
+/* ============== Reports ============== */
+/* ============== Responsive Form ============== */
+/* ============== Segmented Control ============== */
+/* ============== Ticket Types ============== */
+/* ============== Toggle / Switch ============== */
+.eb-widget {
+  background-color: #fff;
+  border: 1px solid #D2D6DF;
+  border-radius: 4px;
+  overflow: hidden; }
+
+.eb-widget__header {
+  background-color: #EFF2F5;
+  border-radius: 4px 4px 0 0; }
+
+.eb-widget__body {
+  background-color: #F8F8FA;
+  border-radius: 0 0 4px 4px; }
+
+/* ============== Browser Support ============== */
+/* ================== Colors ================== */
+/* ================ Typography ================= */
+/* ============ Heights and Widths ============= */
+/* ========== Responsive breakpoints =========== */
+/* ================= Elevations ================ */
+/* ================= Animations ================ */
+/* =================== Icons =================== */
+/* ============== Module specific ============== */
+/* ============== Accordion ============== */
+/* ============== Avatar ============== */
+/* ============== Badge ============== */
+/* ============== Button ============== */
+/* ============== Card ============== */
+/* ============== Event Cards ============== */
+/* ============== Form ============== */
+/* ============== Overlay ============== */
+/* ============== Reports ============== */
+/* ============== Responsive Form ============== */
+/* ============== Segmented Control ============== */
+/* ============== Ticket Types ============== */
+/* ============== Toggle / Switch ============== */
+.elevation-0, .ticket-box--widget, .ticket-box--widget.is-active {
+  box-shadow: 0 0 0 0 transparent; }
+
+.elevation-1 {
+  box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.1); }
+
+.elevation-2 {
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15); }
+
+.elevation-3 {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.25); }
+
+.elevation-4 {
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.3); }
+
+.elevation-inverted-1 {
+  box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.1); }
+
+/* ============== Browser Support ============== */
+/* ================== Colors ================== */
+/* ================ Typography ================= */
+/* ============ Heights and Widths ============= */
+/* ========== Responsive breakpoints =========== */
+/* ================= Elevations ================ */
+/* ================= Animations ================ */
+/* =================== Icons =================== */
+/* ============== Module specific ============== */
+/* ============== Accordion ============== */
+/* ============== Avatar ============== */
+/* ============== Badge ============== */
+/* ============== Button ============== */
+/* ============== Card ============== */
+/* ============== Event Cards ============== */
+/* ============== Form ============== */
+/* ============== Overlay ============== */
+/* ============== Reports ============== */
+/* ============== Responsive Form ============== */
+/* ============== Segmented Control ============== */
+/* ============== Ticket Types ============== */
+/* ============== Toggle / Switch ============== */
+/* ============== Browser Support ============== */
+/* ================== Colors ================== */
+/* ================ Typography ================= */
+/* ============ Heights and Widths ============= */
+/* ========== Responsive breakpoints =========== */
+/* ================= Elevations ================ */
+/* ================= Animations ================ */
+/* =================== Icons =================== */
+/* ============== Module specific ============== */
+/* ============== Accordion ============== */
+/* ============== Avatar ============== */
+/* ============== Badge ============== */
+/* ============== Button ============== */
+/* ============== Card ============== */
+/* ============== Event Cards ============== */
+/* ============== Form ============== */
+/* ============== Overlay ============== */
+/* ============== Reports ============== */
+/* ============== Responsive Form ============== */
+/* ============== Segmented Control ============== */
+/* ============== Ticket Types ============== */
+/* ============== Toggle / Switch ============== */
+/* ---------------------------------------------------------- */
+/*                                                            */
+/* A media query that captures:                               */
+/*                                                            */
+/* - Retina iOS devices                                       */
+/* - Retina Macs running Safari                               */
+/* - High DPI Windows PCs running IE 8 and above              */
+/* - Low DPI Windows PCs running IE, zoomed in                */
+/* - Low DPI Windows PCs and Macs running Firefox, zoomed in  */
+/* - Android hdpi devices and above                           */
+/* - Android tvdpi devices, including Google Nexus 7          */
+/* - Chrome running on high DPI Macs and PCs                  */
+/* - Opera running on high DPI Macs, PCs and mobile devices   */
+/*                                                            */
+/* Please note that that this code assumes you'll swap a      */
+/* 2× version of your images. If you'd like to supply         */
+/* finer increments, other thresholds might be appropriate.   */
+/*                                                            */
+/* A test for CSS pixel densites can be found here:           */
+/* http://bjango.com/articles/min-device-pixel-ratio/         */
+/*                                                            */
+/*                                  @marcedwards from @bjango */
+/*                                                            */
+/* ---------------------------------------------------------- */
+/* This is hacky and awesome. it should be part of mixins or something.
+   I found it once on stack overflow and couldn't find it later when I looked */
+/* XXX: test in browsers */
+/* ratio is the height divided by width in percentage form */
+/* This function is used to get the max height for multi-line ellipses
+ * We use px values for line-height in styleguide, and unitless values for line-height in core
+ * so we need to handle the possibility for both here
+ */
+.ticket-widget--preview, .ticket-widget__ticket-list.disabled-overlay,
+.ticket-widget__footer.disabled-overlay,
+.ticket-widget__checkout.disabled-overlay {
+  pointer-events: none; }
+  .ticket-widget--preview select, .ticket-widget__ticket-list.disabled-overlay select,
+  .ticket-widget__footer.disabled-overlay select,
+  .ticket-widget__checkout.disabled-overlay select {
+    pointer-events: none; }
+
+.ticket-widget__ticket__description,
+.ticket-widget__ticket__hide-link {
+  display: none; }
+
+.ticket-widget__ticket__show-link {
+  display: inline-block; }
+
+.ticket-widget__ticket--description-shown .ticket-widget__ticket__description {
+  display: block; }
+
+.ticket-widget__ticket--description-shown .ticket-widget__ticket__hide-link {
+  display: inline-block; }
+
+.ticket-widget__ticket--description-shown .ticket-widget__ticket__show-link {
+  display: none; }
+
+.ticket-widget__ticket-list.disabled-overlay,
+.ticket-widget__footer.disabled-overlay,
+.ticket-widget__checkout.disabled-overlay {
+  opacity: 0.5; }
+
+.ticket-widget__footer {
+  border-radius: 0 0 4px 4px; }
+
+.ticket-widget__loader-container {
+  position: relative; }
+
+.ticket-widget__loader {
+  position: absolute;
+  width: 100%;
+  top: 25px; }
+
+.responsive-form__select.responsive-form__select-type--icon-text {
+  height: auto;
+  background-color: transparent; }
+  .responsive-form__select.responsive-form__select-type--icon-text .btn--target {
+    padding: 0;
+    background-color: transparent;
+    border-color: transparent; }
+
+.ticket-box--widget {
+  border-left: none;
+  margin-bottom: 0; }
+  .ticket-box--widget.ticket-box--widget__show-tickets-remaining .ticket-box__primary {
+    width: 40%; }
+  .ticket-box--widget.ticket-box--widget__show-tickets-remaining .ticket-box__secondary {
+    width: 30%; }
+  @media only screen and (max-width: 479px) {
+    .ticket-box--widget.ticket-box--widget__show-tickets-remaining .ticket-box__primary {
+      width: 60%; }
+    .ticket-box--widget.ticket-box--widget__show-tickets-remaining .ticket-box__secondary {
+      width: 40%; } }
