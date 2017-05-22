@@ -100,6 +100,60 @@
   }
   /*]]>*/
   </style>
+  <style>
+     .navbar {
+      position:fixed;height:88px;background:#262627;top:0;width:100%;z-index:100;
+    }
+
+    .navbar img {
+      float: left;
+      height: 88px;
+      padding: 15px;
+    }
+
+    .navbar-link {
+      padding: 35px 15px;
+      display: inline-block;
+      font-family: PT Sans Caption,Arial,Helvetica Neue,Helvetica,sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: white;
+    }
+
+    .navbar-link:hover {
+      color: #1ac6ff;
+      text-decoration: none;
+    }
+
+     body, .anchor-section {
+      padding-top: 88px;
+    }
+
+    @media (max-width:579px) {
+      .navbar {
+        height: 134px;
+      }
+
+      .navbar img {
+        float: none;
+        display: block;
+        margin: auto;
+      }
+
+      .navbar-link {
+        padding: 6px 10px;
+      }
+
+      body, .anchor-section {
+        padding-top: 134px;
+      }
+
+      .navbar-links {
+        text-align: center;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -108,6 +162,20 @@
     data-reactid="1">
       <div data-reactid="2">
         <div class="home" data-reactid="3">
+          <div class="navbar">
+            <a href="#">
+              <img src="index_files/d2ea5e8fe817837ae1562abc6ee37e60.png" alt="" >
+            </a>
+            <div class="navbar-links">
+              <a class="navbar-link" href="#about">About</a>
+              <a class="navbar-link" href="#schedule">Schedule</a>
+              <a class="navbar-link" href="#speakers">Speakers</a>
+              <a class="navbar-link" href="#team">Team</a>
+              <a class="navbar-link" href="#sponsors">Sponsors</a>
+            </div>
+            <!--<a href="#location">Location</a>-->
+            <!--<a href="#networking">Networking</a>-->
+          </div>
           <div class="w9ok6dgcam0ppP52bwnBB centered-block _-wOzU4DGyq9t-diDfZfgb"
           data-reactid="12">
             <div class="_1zvVaiwSh1X6O03wrS2gD-" data-reactid="13">
@@ -130,7 +198,7 @@
             </div>
           </div>
 
-          <div name="about" data-reactid="67">
+          <div name="about" data-reactid="67" id="about" class="anchor-section">
             <div class="_1zvVaiwSh1X6O03wrS2gD-" data-reactid="69">
               <h3 data-reactid="71">About</h3><br data-reactid="72" />
               <br data-reactid="73" />
@@ -186,7 +254,7 @@
             </div>
           </div>
 
-          <div name="schedule" data-reactid="152">
+          <div name="schedule" data-reactid="152" id="schedule" class="anchor-section">
             <div class="_1zvVaiwSh1X6O03wrS2gD-" data-reactid="154">
               <h3 data-reactid="156">Schedule</h3><br data-reactid="157" />
               <br data-reactid="158" />
@@ -750,7 +818,7 @@
                                   <li class="_1sQxGEBBq2b0I2disUq-jJ" data-reactid="356">
                                   <a href="http://summit2016.reversim.com/#" class=""
                                   data-reactid="357">Farmers application
-                                  (×ž×”×—×§×œ××™)</a><br data-reactid="358" />
+                                  (מהחקלאי)</a><br data-reactid="358" />
                                   <strong class=
                                   "A_1BhPDeKMEGztqT13Wj8 _1EcQkxOI-dUXz1rCz6dYvS"
                                   data-reactid="359">Shlomi Zadok</strong></li>
@@ -1599,7 +1667,7 @@
                               "_1TbZ_o5VKNapua4eSpKf5q _36A73H1u2W7L0MIL7HwQlW"
                               data-reactid="643">
                                 <div class="_19SESjN4ZXDfBgS4FabTls" data-reactid="644">
-                                  â€œOperationsâ€ - you keep using that word, but I donâ€™t
+                                  œOperations - you keep using that word, but I don™t
                                   think it means what you think it means
                                 </div><strong class=
                                 "A_1BhPDeKMEGztqT13Wj8 _1EcQkxOI-dUXz1rCz6dYvS"
@@ -1859,7 +1927,7 @@
           </div>
 
 
-          <div name="speakers" data-reactid="725">
+          <div name="speakers" data-reactid="725" id="speakers" class="anchor-section">
             <div class="_1zvVaiwSh1X6O03wrS2gD-" data-reactid="727">
               <h3 data-reactid="729">Speakers</h3><br data-reactid="730" />
               <br data-reactid="731" />
@@ -1878,18 +1946,17 @@
                       Levi</h3>
 
                       <p class="_2Ci9DmChI1VbQu0A_yHd86" data-reactid="740">
-                      <small data-reactid="741">×ž×”× ×“×¡, ×¡×•×¤×¨, ×™×–× ×•×¤×•×“×§××¡×˜×¨. × +3, ×‘×Ÿ
-                      41</small></p>
+                      <small data-reactid="741">מהנדס, סופר, יזם ופודקאסטר. נ+3, בן 41
 
-                      <p class="bio" data-reactid="742">×›×ª×‘ ×©×œ×•×©×” ×¡×¤×¨×™× ×‘×ª×—×•× ×”×”×™×¡×˜×•×¨×™×”
-                      ×©×œ ×”×˜×›× ×•×œ×•×’×™×”, ×”××—×¨×•×Ÿ ×©×‘×”× - '×§×¨×‘ ×ž×•×—×•×ª: ×¢×œ ×”×”×™×¡×˜×•×¨×™×” ×”×–×“×•× ×™×ª ×©×œ
-                      ×”×•×™×¨×•×¡×™× ×œ×ž×—×©×‘'.</p>
+                      </small></p>
+                      <p class="bio" data-reactid="744">                        כתב שלושה ספרים בתחום ההיסטוריה של הטכנולוגיה, האחרון שבהם - 'קרב מוחות: על ההיסטוריה הזדונית של הוירוסים למחשב'.</p>
+                      <p class="bio" data-reactid="742">כותב ומגיש את 'עושים היסטוריה', הפודקאסט הישראלי המואזן ביותר.
 
-                      <p class="bio" data-reactid="743">×›×•×ª×‘ ×•×ž×’×™×© ××ª '×¢×•×©×™× ×”×™×¡×˜×•×¨×™×”',
-                      ×”×¤×•×“×§××¡×˜ ×”×™×©×¨××œ×™ ×”×ž×•××–×Ÿ ×‘×™×•×ª×¨.</p>
+                      </p>
 
-                      <p class="bio" data-reactid="744">×ž×™×™×¡×“ ×©×œ ×©×ª×™ ×—×‘×¨×•×ª ×‘×ª×—×•×
-                      ×”× ×™×•-×ž×“×™×” ×•×”×¤×•×“×§××¡×˜×™×.</p>
+                      <p class="bio" data-reactid="743">מייסד של שתי חברות בתחום הניו-מדיה והפודקאסטים.
+
+                      </p>
 
                       <ul class="_3iabph3idnPhZnOPqZd8Q4" data-reactid="745">
                         <li data-reactid="746"><a href=
@@ -2141,7 +2208,7 @@
                       <p class="bio" data-reactid="856">Full-stack developer,
                       specializing in native mobile development for iOS and Android. My
                       latest passion is React Native. Currently leading the architecture
-                      for Wix.comâ€™s native mobile efforts. Before Wix Iâ€™ve been an
+                      for Wix.com™s native mobile efforts. Before Wix I™ve been an
                       entrepreneur for 7 years and co-founded two startups. The latter,
                       Appixia, a platform for DIY native mobile app generation, was
                       acquired by Wix in 2014.</p>
@@ -2219,7 +2286,7 @@
                       blogger, active member of the local tech meetup scene,</p>
 
                       <p class="bio" data-reactid="890">...and yet I'm still introduced
-                      to new employees as â€œthe Javascript guy".</p>
+                      to new employees as œthe Javascript guy".</p>
 
                       <ul class="_3iabph3idnPhZnOPqZd8Q4" data-reactid="891">
                         <li data-reactid="892"><a href="https://twitter.com/cowchimp"
@@ -2322,7 +2389,7 @@
                       <p class="bio" data-reactid="937">Shai Kfir has been a developer
                       for 20 years and a manager for 5. Shai also serves as a mentor for
                       new managers and co-facilitates a workshop for new managers at Wix
-                      called â€œManagement 101â€.</p>
+                      called œManagement 101.</p>
 
                       <p class="bio" data-reactid="938"></p>
 
@@ -2710,7 +2777,7 @@
                       <p class="bio" data-reactid="1132">6 years ago, I discovered my
                       real passion. After 10 years as a developer, I understood that what
                       I really love doing is to create cool products that are simple to
-                      use and solves customerâ€™s problems and to do that within the
+                      use and solves customer™s problems and to do that within the
                       boundaries of timeline and resources.</p>
 
                       <p class="bio" data-reactid="1133">I was a UX designer for a year
@@ -2886,7 +2953,7 @@
 
                       <p class="_2Ci9DmChI1VbQu0A_yHd86" data-reactid="1218">
                       <small data-reactid="1219">CEO at Wisdo.com. Wisdo helps people
-                      take on lifeâ€™s greatest challenges by equipping them with wisdom
+                      take on life™s greatest challenges by equipping them with wisdom
                       from those who have been there.</small></p>
 
                       <p class="bio" data-reactid="1220">15 years of quality content
@@ -3191,7 +3258,7 @@
 
                       <p class="bio" data-reactid="1373">Tamir Dresher is a Senior
                       Architect at CodeValue - one of the leading software companies in
-                      Israel and the home of â€œOzCodeâ€, the magical debugging tool.</p>
+                      Israel and the home of œOzCode, the magical debugging tool.</p>
 
                       <p class="bio" data-reactid="1374">Tamir is a technology pioneer
                       that leads software development projects from inception, through
@@ -3200,8 +3267,8 @@
                       edge startups.</p>
 
                       <p class="bio" data-reactid="1375">He is a prominent member of
-                      Israelâ€™s Microsoft developers community and the author of the book
-                      â€œReactive Extensions in .NETâ€ (published by Manning).</p>
+                      Israel™s Microsoft developers community and the author of the book
+                      œReactive Extensions in .NET (published by Manning).</p>
 
                       <p class="bio" data-reactid="1376">Tamir loves teaching as much as
                       he loves programming, and enjoys teaching software engineering to
@@ -3360,11 +3427,11 @@
                       Extraordinaire</small></p>
 
                       <p class="bio" data-reactid="1451">Kaleb is a UX Researcher &amp;
-                      Strategist at Israel based Kenshoo. Heâ€™s conducted hundreds of user
+                      Strategist at Israel based Kenshoo. He™s conducted hundreds of user
                       interviews and usability tests across a myriad of products and
                       services. From graphic designing for a non-profit in Chicago to
                       launching a sexy start-up airline in San Francisco and now working
-                      for global Israeli software company, heâ€™s crafted an eclectic
+                      for global Israeli software company, he™s crafted an eclectic
                       background in marketing, product management, user experience,
                       research and analytics.</p>
 
@@ -3845,7 +3912,7 @@
             </div>
           </div>
 
-          <div name="team" data-reactid="1671">
+          <div name="team" data-reactid="1671" id="team" class="anchor-section">
             <div class="_1zvVaiwSh1X6O03wrS2gD-" data-reactid="1673">
               <h3 data-reactid="1675">Team</h3>
 
@@ -4205,7 +4272,7 @@
                       <small data-reactid="1858">The Voice @ Reversim, founder @
                       Yodas</small></p>
 
-                      <p class="bio" data-reactid="1859">A full-stacker and The Voiceâ„¢ at
+                      <p class="bio" data-reactid="1859">A full-stacker and The Voice at
                       reversim. Founder and janitor at yodas.com</p>
 
                       <ul class="_3iabph3idnPhZnOPqZd8Q4" data-reactid="1860">
@@ -4242,7 +4309,7 @@
                       <p class="bio" data-reactid="1879">Adir has been building the web
                       in its better version for almost a decade. For the last 4 years, he
                       has been specializing in front-end development, focuses on building
-                      tomorrowâ€™s user interfaces.</p>
+                      tomorrow™s user interfaces.</p>
 
                       <p class="bio" data-reactid="1880"></p>
 
@@ -4446,8 +4513,8 @@
                       <p class="bio" data-reactid="1974">using : Hadoop stack, storm,
                       kafka .</p>
 
-                      <p class="bio" data-reactid="1975">Co-Founder of the â€œBig
-                      Thingsâ€</p>
+                      <p class="bio" data-reactid="1975">Co-Founder of the "Big
+                      Things"</p>
 
                       <p class="bio" data-reactid="1976"></p>
 
@@ -4546,7 +4613,7 @@
             </div>
           </div>
 
-          <div name="sponsors" data-reactid="2020">
+          <div name="sponsors" data-reactid="2020" id="sponsors" class="anchor-section">
             <div class="_1zvVaiwSh1X6O03wrS2gD-" data-reactid="2022">
               <h3 data-reactid="2024">Sponsors</h3>
 
@@ -4646,7 +4713,7 @@
                       Engineers who love their work, are passionate about technology and
                       believe that nothing is impossible. We don't care which technology
                       you speak, we just want to make sure you play it amazingly. We're
-                      growing quickly, but function like a start-up â€“meaning you'll have
+                      growing quickly, but function like a start-up “meaning you'll have
                       the chance to make a real impact.<!-- /react-text -->
                       <!-- react-text: 2074 --> Interested? More info
                       <!-- /react-text --><a href="http://www.wix.com/jobs/home"
@@ -4677,9 +4744,9 @@
                       </div>
 
                       <p data-reactid="2087"><!-- react-text: 2088 -->Founded in 2004,
-                      Facebookâ€™s mission is to give people the power to share and make
+                      Facebook™s mission is to give people the power to share and make
                       the world more open and connected. People use Facebook to stay
-                      connected with friends and family, do discover whatâ€™s going on in
+                      connected with friends and family, do discover what™s going on in
                       the world, and to share and express what matters to them.
                       <!-- /react-text --><!-- react-text: 2089 -->
                       <!-- /react-text --><a href="https://www.facebook.com/careers/"
@@ -4781,7 +4848,7 @@
                       bring together incredibly bright minds, and all the newest
                       technologies and languages. The result is a culture of constant
                       innovation. With 82 million users, 28 million family trees, and 6.8
-                      billion records, as an engineer at MyHeritage, youâ€™ll overcome
+                      billion records, as an engineer at MyHeritage, you™ll overcome
                       exciting scale challenges to build a line of products with massive
                       global impact.<!-- /react-text --><!-- react-text: 2135 -->
                       <!-- /react-text --><a href="http://www.myheritage.com/"
@@ -4798,10 +4865,10 @@
                       <p data-reactid="2141"><!-- react-text: 2142 -->Are you obsessed
                       with performance and scale challenges? Do you lose hours of sleep
                       thinking about how to reduce ten milliseconds from an SQL query? If
-                      youâ€™re looking for challenges with server solutions and running
+                      you™re looking for challenges with server solutions and running
                       cutting-edge NoSQL BigData architecture, then look no further. Our
                       complex environment of over 2.6 billion individual profiles, and
-                      over 6 billion historical records, will ensure that youâ€™ll help
+                      over 6 billion historical records, will ensure that you™ll help
                       solve BigData challenges (using Hadoop, Cassandra, and other NoSQL
                       solutions) while working in continuous integration and deployment.
                       We're growing fast and have opportunities for DevOps experts,
@@ -4983,7 +5050,7 @@
 
                       <p data-reactid="2225"><!-- react-text: 2226 -->Founded in 2010
                       with offices in New York City, Chicago, Miami, San Francisco and
-                      Tel Aviv, FiverrÂ® is the world's most transacted marketplace for
+                      Tel Aviv, Fiverr® is the world's most transacted marketplace for
                       digital services. Fiverr is shaping the future of work, every day,
                       by shifting the freelance economy online.<!-- /react-text -->
                       <!-- react-text: 2227 --> <!-- /react-text --><a href=
@@ -5226,10 +5293,10 @@
 
                       <p data-reactid="2340"><!-- react-text: 2341 -->Akamai is the
                       global leader in Content Delivery Network (CDN) services, making
-                      the Internet business readyâ€”fast, reliable, and secureâ€”for its
+                      the Internet business ready”fast, reliable, and secure”for its
                       customers. We operate the most pervasive, highly distributed
-                      CDNâ€”with more than 200,000 servers in 110 or more
-                      countriesâ€”delivering up to 30% of all Web traffic.
+                      CDN”with more than 200,000 servers in 110 or more
+                      countries”delivering up to 30% of all Web traffic.
                       <!-- /react-text --><!-- react-text: 2342 -->
                       <!-- /react-text --><a href="http://www.akamai.com/" data-reactid=
                       "2343"><!-- react-text: 2344 -->Akamai<!-- /react-text -->
@@ -5258,7 +5325,7 @@
             </div>
           </div>
 
-          <div name="location" data-reactid="2353">
+          <div name="location" data-reactid="2353" id="location" class="anchor-section">
             <div class="_2UsOekUiZBLDoUrbKUPquJ" data-reactid="2355">
               <div class="_12KR6qg0WVjjYXzgNO7BHn" style=
               "height: 560px; position: relative; overflow: hidden;" data-reactid="2356">
@@ -5702,7 +5769,7 @@
             </div>
           </div>
 
-          <div name="networking" data-reactid="2371">
+          <div name="networking" data-reactid="2371" id="networking" class="anchor-section">
             <div class="_1zvVaiwSh1X6O03wrS2gD-" data-reactid="2373">
               <h3 data-reactid="2375">Networking</h3><br data-reactid="2376" />
               <br data-reactid="2377" />
@@ -5769,7 +5836,7 @@
             </div>
           </div>
 
-          <div class="_1zvVaiwSh1X6O03wrS2gD-" data-reactid="2411">
+          <div class="_1zvVaiwSh1X6O03wrS2gD-" data-reactid="2411" style="background: #1f2125;width: auto;">
             <div class="jVu03rjNQKCjAJonoMHbE" data-reactid="2412">
               <div class="widget _1oK0CqDNwfT-iHSYR-6CNy" data-reactid="2413">
               <h6 class="_2wUNfNOon6UMhmpf-Jua4W" data-reactid="2414">
@@ -5778,7 +5845,7 @@
 
               <p class="_2Ci9DmChI1VbQu0A_yHd86" data-reactid="2417"><small data-reactid=
               "2418"><a href="http://reversim.com/" data-reactid="2419">Reversim</a>
-              <!-- react-text: 2420 --> (×¨×‘×¨×¡ ×¢× ×¤×œ×˜×¤×•×¨×ž×”) is a Hebrew podcast by
+              <!-- react-text: 2420 --> (רברס עם פלטפורמה) is a Hebrew podcast by
               <!-- /react-text --><a href="https://twitter.com/orilahav" data-reactid=
               "2421">Ori Lahav</a><!-- react-text: 2422 --> and
               <!-- /react-text --><a href="http://tavory.com/" data-reactid="2423">Ran
@@ -5806,8 +5873,8 @@
                     <p class="_2Ci9DmChI1VbQu0A_yHd86 _2PrpbyEpqMr9VSspmNiney">Yet
                     another session with <a href=
                     "http://twitter.com/ShlomiNoach">@ShlomiNoach</a> about mysql, github
-                    and moreâ€¦ <a href=
-                    "https://t.co/mtxIr5tXUc">reversim.com/2017/02/316-yeâ€¦</a> With
+                    and more¦ <a href=
+                    "https://t.co/mtxIr5tXUc">reversim.com/2017/02/316-ye¦</a> With
                     <a href="http://twitter.com/rantav">@rantav</a> and <a href=
                     "http://twitter.com/orilahav">@orilahav</a></p><small class=
                     "tweet-date">Feb 18, 2017</small>
@@ -5819,7 +5886,7 @@
                     "http://twitter.com/rantav">@rantav</a> <a href=
                     "http://twitter.com/anativ">@anativ</a> and <a href=
                     "http://twitter.com/jondot">@jondot</a> <a href=
-                    "https://t.co/01Qt7VNnuS">reversim.com/2017/02/315-buâ€¦</a></p><small class="tweet-date">Feb
+                    "https://t.co/01Qt7VNnuS">reversim.com/2017/02/315-bu¦</a></p><small class="tweet-date">Feb
                     6, 2017</small>
                   </li>
 
@@ -5827,7 +5894,7 @@
                     <p class="_2Ci9DmChI1VbQu0A_yHd86 _2PrpbyEpqMr9VSspmNiney">Join How
                     GitHub Works tomorrow by Githubber Shlomi Noach: Distributed Ops at
                     GitHub. 9am Binyamina <a href=
-                    "https://t.co/deo314TkxQ">meetup.com/How-Companies-â€¦</a></p><small class="tweet-date">Jan
+                    "https://t.co/deo314TkxQ">meetup.com/How-Companies-¦</a></p><small class="tweet-date">Jan
                     24, 2017</small>
                   </li>
                 </ul>
@@ -5862,7 +5929,7 @@
 
                 <p class="_2Ci9DmChI1VbQu0A_yHd86" data-reactid="2450">
                 <small data-reactid="2451">All&nbsp;Rights Reserved
-                Â©&nbsp;2016</small></p>
+                ©&nbsp;2016</small></p>
               </div>
             </div>
           </div>
